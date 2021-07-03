@@ -3,6 +3,7 @@ import { View, StyleSheet, Text, TextInput, TouchableOpacity, Alert } from 'reac
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import 'react-native-gesture-handler';
+import Counter from './Counter';
 
 function LoginScreen({ navigation }) {
   return (
@@ -38,7 +39,7 @@ function LoginScreen({ navigation }) {
 function MainScreen() {
   return (
     <View style={styles.container}>
-      <Text>메인 페이지입니다.</Text>
+      <Counter />
     </View>
   );
 }
